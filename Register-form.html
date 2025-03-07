@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login_Page</title>
+	<!-- <link rel="stylesheet" href="Login.css"> -->
+	<style>
+		
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+#pic img{
+    margin-left: 22%;
+    width: 12rem;
+    height: auto;
+}
+#main
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(39deg,rgb(221, 5, 5),green,yellow);
+   background-size: cover;
+   background-position: center;
+   animation: animatbg 5s linear infinite;
+   padding: 20px; /* Ensures some padding for smaller screens */
+}
+@keyframes animatbg{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.login-box
+{
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* This ensures the width doesn't exceed 400px */
+    height: auto;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(9px);
+    padding: 20px; /* Padding for a nicer look on smaller devices */
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    border-bottom: 2px solid #f7f6f6;
+}
+.input-box select
+{
+    
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 100;
+    outline: none;
+    color: #f7f0f0;
+}
+.input-box select option{
+    color: black;
+     cursor: pointer;
+}
+
+
+.input-box label 
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input
+{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    color: #fff;
+}
+
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remeber-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.remeber-forgot label input{
+    margin-right: 3px;
+}
+.remeber-forgot a{
+    color: #f15c5c;
+    text-decoration: none;
+}
+.remeber-forgot a:hover{
+    text-decoration: underline;
+}
+button
+{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient( 12deg,rgb(15, 15, 11),rgb(194, 176, 16),rgb(19, 15, 212));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 800;
+    color: rgb(107, 5, 10);
+    
+}
+button:hover{
+    background-color: blueviolet;
+    box-shadow: 2px black;
+}
+.register-link{
+    font-size: .9em;
+    color: #f8f1f1;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-link p a{
+    color: #23d2df;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #pic img {
+        margin-left: 0;
+        width: 10rem; /* Smaller width for tablets */
+    }
+    .login-box {
+        width: 90%; /* Adjusts width to fit smaller screens */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #pic img {
+        margin-left: 0;
+        width: 8rem; /* Adjust image size for mobile devices */
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    button {
+        height: 35px;
+    }
+}
+	</style>
+</head>
+<body>
+<div id="main">
+    <div class="login-box">
+        <form action="">
+            
+            <h2>Register</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="user"></ion-icon></span>
+                <select name="" id="">
+                    <option value="">Select Create For</option>
+                    <option value="">My Brother</option>
+                    <option value="">My Sister</option>
+                    <option value="">My Freind</option>
+                    <option value="">My Son</option>
+                    <option value="">My Dougter</option>
+                    <option value="">My Cusion</option>
+                    <option value="">Other</option>
+                </select>
+            
+            </div>
+
+
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="text" required>
+                <label>Enter Name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="tel" required>
+                <label>Enter Mobile Number</label>
+            </div>
+            
+            <button type="submit">Register</button>
+            <div class="register-link">
+                <p>I have an account? <a href="login-page.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

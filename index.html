@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marrige.in.com</title>
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <!-- Iconic Bootstrap Icons -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="sadi.css">
+    
+</head>
+<body>
+    <div class="container">
+        <a href="About.html"><img src="img/amazon_logo.png" alt="Logo"></a>
+
+
+        <p class="user">
+   
+            <a href="#" class="active">Home</a>
+            <a href="About.html" >About</a>
+            <a href="#" >Services</a>
+            <a href="#" >Contact</a>
+           <br>
+           <br>          <a href="login-page.html"class="login-btn">Log-in </a>
+        </p>
+
+        <div class="animation1">
+            <span id="typing-animation"></span>
+            <script>
+                // Typing animation function
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = ['Find Special Person for You', 'Find The Special Person for Your Friend', 'Find The Special Person For Your Brother'];
+
+                function playTypingAnimation(text) {
+                    for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                        }, i * 200);
+                    }
+
+                    setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 200);
+                }
+
+                playTypingAnimation(typingTexts[0]);
+            </script>
+            <br>
+            <button type="button" id="btn"><a href="Register-form.html">Register Here</a></button>
+        </div>
+    </div>
+
+    <div class="midcontainer">
+        <div class="card1">
+            <img src="img/2.jpeg" alt="Anurudh Gautam & Sandya Gautam">
+            <h4>Anurudh Gautam & Sandya Gautam</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="card1">
+            <img src="img/3.jpeg" alt="Ragini & Subhash Mishra">
+            <h4>Ragini & Subhash Mishra</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="card1">
+            <img src="img/backt.jpeg" alt="Title">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="Details1">
+        <div class="card1">
+            <img src="img/2.jpeg" alt="Anurudh Gautam & Sandya Gautam">
+            <h4>Anurudh Gautam & Sandya Gautam</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="card1">
+            <img src="img/3.jpeg" alt="Ragini & Subhash Mishra">
+            <h4>Ragini & Subhash Mishra</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="card1">
+            <img src="img/backt.jpeg" alt="Title">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+                <!-- <span class="date"style="color: rgb(189, 9, 156);">2024-Present</span> -->
+                <h2>First Step To Your Life</h2>
+                <!-- <span class="position">UpWork</span> -->
+                <!-- <p class="mt-4">UpWork, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
+                    <ul>
+                        <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li><br>
+                        <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li><br>
+                        <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+                <!-- <span class="date"style="color: rgb(189, 9, 156);">2020-2023</span> -->
+                <h2 >Find Spcial </h2>
+                <!-- <span class="position">Quicker</span> -->
+                <!-- <p class="mt-4">iQuanti is a Web-driven digital Web Designing and solutions company, helps top 100 global brands.  -->
+                    <ul>
+                        <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li><br>
+                        <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li><br>
+                        <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <div class="reg-pic">
+            <a href="Register-form.html"><img src="img/ph.jpg" alt=""></a>
+            <a href="login-page.html"><img src="img/myphone.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel2">
+        <ul>
+            <h2>Regional Matrimony Services</h2>
+            <a href="#">Bangali Matrimony</a>
+            <a href="#">Hindi Matrimony</a>
+            <a href="#">Marathi Matrimony</a>
+            <a href="#">Panjabi Matrimony </a>
+            <a href="#">English Matrimony </a>
+            <a href="#"> Oriya Matrimony </a>
+            <a href="#">Parsi Matrimony </a>
+            <a href="#">Kerla Matrimony </a>
+            <a href="#"> Rajisthani Matrimony </a>
+            <a href="#"> Others </a>
+            <!-- Add other links here -->
+        </ul>
+        <ul>
+            <h2>Help & Support</h2>
+            <a href="#">Contact Us</a>
+            <a href="#">Feedback</a>
+            <a href="#">FAQs</a>
+            
+            <h2>Our other Services</h2>
+
+            <a href="#">other page</a>
+            <a href="#">other page</a> 
+            <a href="#">other page</a>
+
+            <h2>Our Wedding Services</h2>
+
+            <a href="#">other page</a>
+            <a href="#">other page</a> 
+            <a href="#">other page</a>
+         </ul>
+       
+         <ul>
+            <h2>Information</h2>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#"> About Amazon</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Amazon Devices</a>
+            <a href="#">Amazon Science</a>
+            
+         </ul> 
+        <!-- Add other footer columns here -->
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

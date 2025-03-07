@@ -1,0 +1,251 @@
+
+        /* Variables for colors */
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --orange: #523ccd;
+            --yellow: #cb4c1e;
+            --green: #28a745;
+            --red: rgb(248, 15, 46);
+        }
+
+        /* Resetting basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Container styling */
+        .container {
+            position: relative;
+            background-image: url('img/main.jpeg');
+            padding: 1px;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            
+    
+            
+        }
+
+        .container img {
+            height: 5em;
+            width: 10em;
+            display: none;
+                    
+        }
+
+        .user{
+    margin-top: -12rem;
+     margin-right: 33px;
+   
+    
+}
+.user ,a{
+     
+    margin-right: 38px;
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    
+    font-size: 21px;
+    text-align: right;
+    font-weight: 700;
+    
+
+
+    
+
+}
+.user a:hover{
+             color: #0d9919;
+}
+.user a.active{
+   color:  #c40094;
+}
+.login-btn{
+    color: #f1ca19;
+    background: linear-gradient(45deg,transparent,#c40094 ,transparent);
+    padding: 3px 14px;
+    border-radius: 6px;
+}
+
+        /* Typing animation */
+        .animation1 {
+            color: rgb(250, 52, 2);
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 60px;
+            padding: 2rem;
+        }
+
+        button {
+            background-color: rgb(33, 238, 245);
+            color: rgb(26, 3, 88);
+            padding: 10px;
+            margin-top: 2rem;
+            width: 245px;
+            border-radius: 38px;
+            border: none;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Cards styling */
+        .midcontainer, .Details1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 25px;
+            /* background-color: rgb(122, 236, 212); */
+        }
+
+        .card1 {
+            background-color: rgb(87, 156, 8);
+            width: 23rem;
+            padding: 4px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+        }
+
+        .card1 img {
+            border-radius: 12px;
+            width: 100%;
+            height: 14rem;
+        }
+
+        .card1 h4 {
+            padding: 6px;
+            color: #cb4c1e;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Mid Item */
+        .row{
+            background-color: red;
+            display: flex;
+            color: rgb(15, 1, 27);
+            
+        
+        }
+ .reg-pic img{
+    
+    margin-top: 42px;
+    margin-left: 12px;
+     height: 420px;
+     
+}
+.col-md-6{
+    height: auto;
+    width: 400px;
+    text-align:left;
+    padding: 33px;
+    list-style:georgian;
+    border-radius: 6px;
+    margin: 22px;
+    border: 2px solid white;
+}
+.row h2{
+    color: #15015c;
+    
+}
+        /* Footer */
+        footer {
+            margin-top: 15px;
+            background-color: #381409;
+            color: white;
+            
+            
+            justify-content: space-evenly;
+        }
+        .foot-panel2{
+    background-color: #0e8f0e;
+    color: rgb(23, 7, 170);
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+   
+}
+
+ul{
+    margin-top: 20px;
+}
+ul a{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    margin: 10px;
+}
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .midcontainer, .Details1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card1 {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .row{
+            background-color: red;
+            display: block;
+            padding-top: 12px;
+        }
+        }
+
+        @media (max-width: 480px) {
+            .animation1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                width: 200px;
+            }
+
+            .card1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .user {
+                margin-right: 0;
+                text-align: center;
+            }
+
+            .user a {
+                display: block;
+                margin: 5px 0;
+            }
+            .row{
+            background-color: red;
+            display: block;
+            padding-top: 12px;
+        }
+        }
+    
